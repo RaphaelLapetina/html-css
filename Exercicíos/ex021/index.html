@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgb(40, 16, 9);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {   
+            color: rgb(212, 42, 42);
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(51, 173, 51);
+        }
+
+        .especial {
+            background-color: red;
+            color: white;
+        }
+
+        .especial::before { 
+           content: '⇒'; 
+        }
+
+        .especial::after {
+            content:'⇐';
+        }
+        /*
+        #  == id
+        .  == class
+        :  == pseudo-class
+        :: == pseudo-element
+        >  == clildren (filho)
+        */
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=DVLuQuIQCIA" target="_blank">Música Fav</a></li>
+        <li><a href="https://apostaganha.bet/#/Inicio/0/0/" target="_blank" class="especial">Apostas</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+    </ul>
+</body>
+</html>
